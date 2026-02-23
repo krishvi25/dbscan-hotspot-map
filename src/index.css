@@ -37,3 +37,72 @@ html, body, #root {
   margin-right: 8px;
   border-radius: 3px;
 }
+.glass-panel {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 340px;
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.75);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  z-index: 1000;
+  font-family: Inter, sans-serif;
+}
+
+.nav-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  margin-top: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #eee;
+}
+
+.nav-btn.primary {
+  background: linear-gradient(135deg,#4facfe,#00f2fe);
+  color: white;
+}
+
+.nav-btn.success {
+  background: linear-gradient(135deg,#43e97b,#38f9d7);
+  color: white;
+}
+
+.location-card {
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.route-card {
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background: white;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.route-card.selected {
+  background: linear-gradient(135deg,#4facfe,#00f2fe);
+  color: white;
+}
+
+.alert-toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg,#ff416c,#ff4b2b);
+  color: white;
+  padding: 14px 22px;
+  border-radius: 14px;
+  font-weight: 600;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  z-index: 9999;
+}

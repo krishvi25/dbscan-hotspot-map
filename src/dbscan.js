@@ -8,6 +8,7 @@ export function dbscan(points, eps, minPts) {
     return Math.sqrt(dx * dx + dy * dy);
   }
 
+
   function regionQuery(point) {
     return points.filter(p => distance(point, p) <= eps);
   }
